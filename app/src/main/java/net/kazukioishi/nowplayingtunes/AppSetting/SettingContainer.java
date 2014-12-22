@@ -19,7 +19,7 @@ import java.util.List;
  * Created by Kazuki on 2014/12/14.
  */
 public class SettingContainer implements Serializable{
-    List<TwiAccount> accountList = new ArrayList<>();
+    List<TwiAccount> accountList = new ArrayList<TwiAccount>();
     boolean enableAutoTweet = false;
     String replaceText = "Nowplaying $Title - $Artist #NowPlaying";
 

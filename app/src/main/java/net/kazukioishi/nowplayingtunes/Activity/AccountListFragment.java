@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 
 import net.kazukioishi.nowplayingtunes.R;
 
+import twitter4j.Twitter;
+
 public class AccountListFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
@@ -30,7 +32,7 @@ public class AccountListFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle("CKP!CKP!");
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("アカウント管理");
     }
 
     @Override
@@ -50,7 +52,7 @@ public class AccountListFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         View view = getView();
-        ((MainActivity) getActivity()).getSupportActionBar().setTitle("CKP!CKP!");
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("アカウント管理");
     }
 
     @Override
@@ -67,6 +69,12 @@ public class AccountListFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.action_acount_add)
+        {
+            //アカウント追加
+
+        }
         return super.onOptionsItemSelected(item);
     }
 

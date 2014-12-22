@@ -16,10 +16,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        testing{
+            applicationIdSuffix ".test"
+        }
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'org.twitter4j:twitter4j:4.0.2'
+    compile 'org.twitter4j:twitter4j-core:4.0.2'
 }

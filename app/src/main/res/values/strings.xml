@@ -10,5 +10,10 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_oatuh">OAtuhActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="oauth_description">アカウントを追加するにはTwittterの認証画面に表示されるパスワードを入力する必要があります。
+        以下のURLをクリックしてブラウザを起動してください</string>
+    <string name="auth">認証</string>
 
 </resources>
